@@ -5,93 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Document</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-   <header> </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                <h5 class="text-white h4">Collapsed content</h5>
-                <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
+   <header class="position-fixed">
+       <div class="pos-f-t">
+  
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="..." alt="">
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white"><a href="#my_information"> Inicio </a></h4>
+              <h4 class="text-white"><a href="#my_information"> Acerca de mi </a></h4>
+              <h4 class="text-white"><a href="#proyects"> Proyectos </a></h4>
+              <h4 class="text-white"><a href="#software"> Software </a></h4>
+              <h4 class="text-white"><a href="#gallery"> Galería </a></h4>
+              <h4 class="text-white"><a href="#contact"> Contacto </a></h4>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                </div>
-            </nav>
-
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              
+          </div>
         </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"><h1>texto soy</h1></div>
-            <div class="col-3"></div>
-            <div class="col-3"> foto </div>
-        </div>
-
-
-
-    </div>
+   </header>
+    
     <main>
-        <section id="my_information" class="align-items-center">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-7">
-                        <h1> Acerca de mi</h1>
-                        <p>Hola Soy Miguel Velasquez Disfruto 
-                            trabajar en equipo y aprender de cada 
-                            experiencia vista en el campo de 
-                            acción, cuento con experiencia en 
-                            diseño para productos impresos en los 
-                            cuales he podido desarrollar elementos 
-                            comunicativos, también he podido 
-                            participar durante 2 años como 
-                            productor de campo ayudando al 
-                            desarrollo de producciones 
-                            audiovisuales.
-                        </p>
-                    <div class="col-5 info">
-                        <img src="ima/" alt="">
+       <section class="banner">
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="ima/carrousel/slaider1.png" alt="First slide">
                     </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="ima/carrousel/slaider2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="ima/carrousel/slaider3.png" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                  </a>
+                </div>
+       </section>
+        <section id="my_information" class="align-items-center border border-dark">
+            <div class="container">
+                <div class="row sm-border">
+                    <div class="col-12 col-sm-12 col-lg-8 my-info text-justify">
+                       
+                        <h1> Acerca de mi</h1>
+                       Hola Soy Miguel Velasquez Disfruto trabajar en equipo y aprender de cada experiencia vista en el campo de  acción, cuento con experiencia en diseño para productos impresos en los cuales he podido desarrollar elementos comunicativos, también he podido participar durante 2 años como productor de campo ayudando al desarrollo de producciones audiovisuales.
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 position-relative">
+                        <div class="text-center photo_me" >
+                          <img src="ima/miguel_foto.png" class="" alt="...">
+                        </div>
                 </div>
                 </div>
             </div>
             
         </section >
-        <section id="proyects">
+        <section id="proyects" class="border border-dark">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 center"><h1>ROYECTOS RECIENTES</h1></div>
-                    <div class="col-6"><img src="ima/Recurso_10.svg" alt=""></div>
-                    <div class="col-6 panel_black ">
+                    <div class="col-12 center"><h1>Proyectos recientes</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6"><img src="ima/respo_ambiental_1.png" alt=""></div>
+                    <div class="col-12 col-sm-12 col-lg-6 panel_black  text-justify">
                        <p>
                             Campaña transmedia dirigida a la
                             educación ambiental en la zona de
@@ -100,72 +99,119 @@
                             Bogotá. 
                         </p>
                    </div>
-                    <div class="col-6 panel_black">
+                    <div class="col-12 col-sm-12 col-lg-6 panel_black text-justify">
                         <p>
-                            Desarrollo de piezas graficas para
+                            Desarrollo de piezas gráficas para
                             esta empresa del sector viajes y
                             turismo a nivel mundial, diseño y
-                            direccion de piezas gráficas para
+                            dirección de piezas gráficas para
                             diferentes canales de comunicación.
                         </p>
                     </div>
-                    <div class="col-6"><img src="ima/Recurso_10.svg" alt=""></div>
+                    <div class="col-12 col-sm-12 col-lg-6"><img src="ima/outlet_1.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="proyects_2" class="border border-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 center"><h1>Proyectos recientes</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6"><img src="ima/respo_ambiental_1.png" alt=""></div>
+                    <div class="col-12 col-sm-12 col-lg-6 panel_black  text-justify">
+                       <p>
+                            Campaña transmedia dirigida a la
+                            educación ambiental en la zona de
+                            san Cristóbal en el sector de
+                            Villa de los Alpes en la ciudad de
+                            Bogotá. 
+                        </p>
+                   </div>
+                    <div class="col-12 col-sm-12 col-lg-6"><img src="ima/outlet_1.png" alt=""></div>
+                    <div class="col-12 col-sm-12 col-lg-6 panel_black text-justify">
+                        <p>
+                            Desarrollo de piezas gráficas para
+                            esta empresa del sector viajes y
+                            turismo a nivel mundial, diseño y
+                            dirección de piezas gráficas para
+                            diferentes canales de comunicación.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="software">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 center"><h1>Manejo de software</h1></div>
-                    <div class="col-2"></div>
-                    <div class="col-2"><img src="ima/Recurso_3.svg" class="software_icon">    Illustrator</div>
-                    <div class="col-2"><img src="ima/Recurso_5.svg" class="software_icon">    Indesign</div>
-                    <div class="col-2"><img src="ima/Recurso_7.svg" class="software_icon">    After efects</div>
-                    <div class="col-2"><img src="ima/Recurso_8.svg" class="software_icon">    Visual estudio code</div>
-                    <div class="col-2"></div>
+                <div class="row justify-content-md-center text-justify">
+                    <div class="col-12 text-center"><h1>Manejo de software</h1></div>
+                    
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_3.svg" class="software_icon text-le">    Illustrator</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_5.svg" class="software_icon">    Indesign</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_7.svg" class="software_icon">    After efects</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_8.svg" class="software_icon">    Visual estudio code</div>
+                    
                 </div>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-2"><img src="ima/Recurso_4.svg" class="software_icon">    Photoshop</div>
-                    <div class="col-2"><img src="ima/Recurso_6.svg" class="software_icon">    Premiere</div>
-                    <div class="col-2"><img src="ima/Recurso_9.svg" class="software_icon">    Corel draw</div>
-                    <div class="col-2"><img src="ima/Recurso_10.svg" class="software_icon">   Figma</div>
-                    <div class="col-2"></div>
+                <div class="row justify-content-md-center text-justify">
+                    
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_4.svg" class="software_icon">    Photoshop</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_6.svg" class="software_icon">    Premiere</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_9.svg" class="software_icon">    Corel draw</div>
+                    <div class="col-6 col-sm-6 col-lg-2"><img src="ima/Recurso_10.svg" class="software_icon">   Figma</div>
+                    
                 </div>
             </div>
         </section>
         <section id="gallery" class="panel_black">
             <div class="container">
-               <h1 class="center">Galeria</h1>
+               <h1 class="center">Galería</h1>
                 <div class="row">
                     
                   
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow  animate__animated animate__backInLeft">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_1.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__backInLeft">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_2.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__flipInX">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_3.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__flipInX">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_4.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                
+                
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__flipInX">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_5.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__flipInX">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_6.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__backInRight">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_7.jpg">
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <div class="img_gallery"></div>
+                    <div class="col-12 col-sm-6 col-lg-3 wow animate__animated animate__backInRight">
+                        <div class="img_gallery">
+                            <img src="ima/galeria/Galery_8.jpg" >
+                        </div>
                     </div>
+                   
                     
                 </div>
             </div>
@@ -173,33 +219,42 @@
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <form action="">
-                            <input type="text" placeholder="nombre">
-                            <br>
-                            <input type="text" placeholder="E-mail">
-                            <br>
-                            <input type="text" placeholder="Mensaje">
-                            <br>
-                            <input type="submit" value="enviar">
+                    <div class="col-12 col-sm-12 col-lg-6 text-center">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"></label>
+                                <input type="text" class="form-control" id="name"  placeholder="Nombre">
+                            </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="email-user"  placeholder="Correo Electronico">
+                          </div>
+                          <div class="form-group">
+                           <label for="exampleFormControlTextarea1"></label>
+                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"
+                           ></textarea>
+                          </div>
+                          <br>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                     </div>
-                    <div class="col-6">
-                       <h1>Contactanos</h1>
-                        <div class="row">
-                            <div class="col-6"><img> </div>
-                            <div class="col-6">
-                                <a href=""><img src="" alt="">a</a>
+                    <div class="col-12 col-sm-12 col-lg-6 contact_data">
+                      <div class="row ">
+                          <div class="col-12 text-center">
+                               <h1 >Contactanos</h1>
+                           </div>
+                        </div>
+                        <div class="row contact_info">
+                            <div class="col-4 col-sm-4 col-lg-6"><img src="ima/miguel_foto_2.png" class="img-left"> </div>
+                            <div class="col-8 col-sm-8 col-lg-6 links_info">
+                                <a href=""><img src="ima/Recurso_11.svg" class="software_icon">  <strong>www.miguelavm.com</strong></a>
                                 <br>
-                                <a href=""><img src="" alt="">b</a>
+                                <a href=""><img src="ima/Recurso_12.svg" class="software_icon text-le"><strong>   Bogotá - Colombia</strong></a>
                                 <br>
-                                <a href=""><img src="" alt="">c</a>
+                                <a href=""><img src="ima/Recurso_13.svg" class="software_icon text-le"><strong>   314 314 5271</strong></a>
                                 <br>
-                                <a href=""><img src="" alt="">f</a>
+                                <a href=""><img src="ima/Recurso_14.svg" class="software_icon text-le"><strong>  contactdesign@gmail.com</strong></a>
                                 <br>
-                                <a href=""><img src="" alt="">g</a>
-                                <br>
-                                <a href=""><img src="" alt="">d</a>
                             </div>
                         </div>
                     </div>
@@ -211,30 +266,43 @@
     
     <footer>
         <div class="container">
-            <div class="row center">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-4"><a href=""><img src="" alt=""></a></div>
-                        <div class="col-4"><a href=""><img src="" alt=""></a></div>
-                        <div class="col-4"><a href=""><img src="" alt=""></a></div>
-                    </div>
-                </div>
+            
+            <div class="row justify-content-md-center text-center">
+        
+               <div class="col-4 col-sm-4 col-sm-2 col-lg-1"><a href="h ttps://www.instagram.com/m_velasquez.mo/" target="_blank"><img src="ima/icon_instagram.png" ></a></div>
+               <div class="col-4 col-sm-4 col-sm-2 col-lg-1"><a href="https://www.behance.net/Miguel_Velasquez" target="_blank" ><img src="ima/icon_other.png" ></a></div>
+                
             </div>
             <div class="row center" >
                 <div class="col-12">
-                    <p>
+                       <strong>
                         Derechos reservados 2022
                         <br>
                         <a href="">mdesign@gmail.com</a>
                              <br>
                         <a href="">www.miguelavm.com</a>
-                    </p>
+                        </strong>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <script>
+        
+        $('#myCarousel').on('slide.bs.carousel', function () {
+              $('.carousel').carousel({
+                      interval: 10
+                    })
+            })
+      
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </body>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+              <script> new WOW().init();
+              </script>
 
 </html>

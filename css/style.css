@@ -1,37 +1,86 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    
-    margin: 0;
-    padding: 0%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Shadows+Into+Light&display=swap');
 
-p{text-align: justify;}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+
+/*----------------------------General--------------------------------------------------------*/
+*{box-sizing: border-box;}
+
+body{margin: 0;padding: 0%; font-family: 'Be Vietnam Pro', sans-serif !important;}
+
+header{z-index: 10; width: 100%; top: 0;}
+header a {color:#fff !important;}
+
+main{margin-top: 50px;}
+
+h1,h2{font-family: 'Shadows Into Light', cursive !important;}
+
+p{text-align: justify; padding: 50px;}
+
+a{text-decoration: none !important; color: #000 !important;}
 
 .panel_black{background: #000; color: #fff;}
 .panel_black p{ text-align: justify; font-size: 30px; }
-
-#my_information,#proyects,#gallery{border:1px solid #000; min-height: 200px; padding-bottom: 10px;}
-
+.panel_black a{color: #fff;}
 
 
-#my_information{
-    
+/*---------------------------------------------My Information------------------------------------*/
+#my_information{ background: linear-gradient(to right, white 0%, white 70%, black 30%, black 100%);
+    min-height: 500px;
 }
 
-#proyects img{max-height: 400px; }
+.my-info { height: 100% auto; position: relative;  border-left: 1px solid #000;
+padding: 100px !important; font-size: 30px;}
 
+.photo_me{position: absolute; left: -50px; top: 100px; width: 100% !important; max-width: 300px;}
+.photo_me img{max-height: 600px;}
+
+
+/*--------------------------------------------Proyect--------------------------------*/
+#proyects{padding:20px 0px;}
+#proyects img{width: 100%; }
+
+#proyects_2{display: none;}
+.my_data{justify-content: space-between; background: #fff;}
+
+
+/*------------------------------------Software-------------------------------------------*/
+#software{ margin: 20px 0px;}
 .software_icon{height: 40px;}
 
+/*------------------------- Galeria ------------------------------------------------------*/
 
-.img_gallery{background: #fff; height: 200px; width: 100% auto; margin: 10px;}
+#gallery{padding: 20px 0px;}
+
+.img_gallery{background: #fff; height: 98%; width: 98% auto; margin: 10px; overflow:hidden; border:2px solid #fff; }
+.img_gallery img{width: 100%; height: 100%;}
 
 
 
+/*---------------------Contactos---------------------------------------------------------------*/
+#contact{margin: 30px 0px;}
+.contact_data {-webkit-box-shadow: 8px 6px 2px 0px rgba(196,196,196,1);
+-moz-box-shadow: 8px 6px 2px 0px rgba(196,196,196,1);
+box-shadow: 8px 6px 2px 0px rgba(196,196,196,1);}
 
-footer{height: 200px; background:#000; color: #fff; }
-footer p{text-align: center ;}
+.contact_info .img-left{ width:100%; max-height: 400px; }
+
+.links_info{padding: 50px 0px;}
+
+/*------------------------Footer-------------------------------------------------------------*/
+footer{height: 200px; background:#000; color: #fff; padding: 20px 0px;}
+footer img{height: 90px;}
+footer a{ color: #fff !important;}
 .center{justify-items: center; text-align: center ; justify-content: center;}
 
 
+@media(max-width: 992px){
+    header{display: flex;}
+    #proyects{display: none;}
+    #proyects_2{padding:20px 0px; display: flex;}
+    #proyects_2 img{width: 100%; }
+    #my_information{ background: linear-gradient(to right, white 0%, white 100%, black 0%, black 100%); border-left: 1px solid #000;}
+    .my-info{min-height: auto; padding: 10px; border:none;}
+    .sm-border{ border-left: 1px solid #000;}
+    .photo_me{position: relative; left: 0;  top:0; margin-bottom: 10px;} 
+}
